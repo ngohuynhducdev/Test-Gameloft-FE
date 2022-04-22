@@ -1,0 +1,14 @@
+// Library CSS (Bootstrap,...)
+
+// Base
+@import "./components/reset";
+@import "./components/variables";
+
+// Components
+@import "./components/button";
+
+// Page
+@import "./pages/Navbar";
+@import "./pages/Banner";
+@import "./pages/StoreButton";
+@import "./pages/Register";
