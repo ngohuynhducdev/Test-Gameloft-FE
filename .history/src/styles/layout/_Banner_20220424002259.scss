@@ -1,0 +1,82 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 665px;
+  min-height: 100vh;
+  z-index: -10;
+  &__img {
+    position: absolute;
+    object-fit: cover;
+    background-image: url("./../../assets/images/banner-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    @media screen and (min-width: 1920px) {
+      background-image: url("./../../assets/images/banner-desktop.png");
+    }
+  }
+  &__des {
+    position: absolute;
+    padding: 0 3.7rem;
+    bottom: 3.9rem;
+    color: $whiteColor;
+
+    @media screen and (min-width: 1920px) {
+      padding: 0 44.6rem;
+      bottom: 15rem;
+    }
+
+    & h2 {
+      font-size: 4rem;
+      max-width: 23.6rem;
+      line-height: 4.5rem;
+      text-transform: uppercase;
+      font-weight: $bold;
+      @media screen and (min-width: 1920px) {
+        max-width: 42rem;
+        font-size: 4.5rem;
+      }
+    }
+    & p {
+      position: relative;
+      align-items: center;
+      font-size: 1.4rem;
+      font-weight: $regular;
+      margin-top: 1rem;
+      align-items: center;
+      display: flex;
+
+      @media screen and (min-width: 1920px) {
+        font-size: 1.1rem;
+      }
+      & span {
+        padding-left: 0.3rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+    & p:nth-child(3) {
+      font-size: 1.2rem;
+      font-weight: $regular;
+      max-width: 26rem;
+      margin-top: 1.5rem;
+      line-height: 1.4rem;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+
+      @media screen and (min-width: 1920px) {
+        font-size: 2rem;
+        max-width: 60rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+}

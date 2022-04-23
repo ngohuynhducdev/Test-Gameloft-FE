@@ -1,0 +1,40 @@
+.content {
+    display: flex;
+
+    .left {
+        @include block(blue, 30%);
+    }
+
+    .right {
+        @include block(red, 70%);
+    }
+}
+
+.dieuKien {
+    @if $block == blue {
+        background-color: blue;
+    } @else if $block == red {
+        background-color: red;
+    } @else {
+        background-color: aqua;
+    }
+}
+
+@for $size from 1 through 10 {
+    .header-#{$size} {
+        font-size: 2rem * $size;
+    }
+}
+
+@each $item in $socials {
+    .#{$item} {
+        background-image: url("./../image/#{$item}.png");
+    }
+}
+
+@while $cols > 0 {
+    .col-#{$cols} {
+        width: 100% / $cols;
+    }
+    $cols: $cols - 1;
+}

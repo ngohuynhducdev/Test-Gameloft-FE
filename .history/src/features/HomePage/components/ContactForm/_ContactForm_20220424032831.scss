@@ -1,0 +1,134 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 53.5rem;
+  background-color: #d8edffad;
+  margin-top: 21rem;
+  // min-height: 100vh;
+
+  @media screen and (min-width: 1920px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+
+    height: 102.5rem;
+    padding: 0 44.6rem;
+  }
+
+  // TODO: form
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 6rem;
+
+    & h2 {
+      padding-top: 7rem;
+      font-size: 2.5rem;
+      font-weight: $bold;
+      color: $primaryColor;
+      line-height: 1.3;
+    }
+    & p {
+      font-size: 1.2rem;
+      font-weight: $regular;
+      color: $primaryColor;
+      line-height: 1;
+      padding-bottom: 3rem;
+    }
+
+    & input,
+    select {
+      width: 100%;
+      height: 3rem;
+      border: 0.1rem solid $primaryColor;
+      margin-bottom: 1rem;
+      border-radius: 0.3rem;
+      color: $primaryColor;
+      font-weight: $regular;
+      background-color: transparent;
+      padding-left: 1rem;
+      outline-color: $blackColor;
+      transition: $smooth;
+
+      @media screen and (min-width: 1920px) {
+        width: 25rem;
+      }
+
+      &::placeholder {
+        color: $primaryColor;
+        opacity: 1;
+      }
+    }
+    & select {
+      padding-left: 0.6rem;
+    }
+
+    & button {
+      background: transparent;
+      color: $primaryColor;
+      padding: 0.9rem 3.2rem;
+      border: none;
+      border: 0.1rem solid $primaryColor;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+
+      // FIXME: align center?
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @media screen and (min-width: 1920px) {
+        left: 50%;
+
+        transform: translateX(-100%);
+      }
+    }
+  }
+
+  // TODO: policy
+  &__policy {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.7rem;
+
+    &--item {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      // FIXME: height?
+      height: 4rem;
+
+      & input {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+      & p {
+        max-width: 23rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        font-weight: $regular;
+      }
+    }
+  }
+
+  // TODO: image
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+
+    @media screen and (min-width: 1920px) {
+      display: block;
+    }
+  }
+}
