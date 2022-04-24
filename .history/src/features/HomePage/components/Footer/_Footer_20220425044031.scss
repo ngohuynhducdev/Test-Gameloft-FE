@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(204, 47, 47);
+  &__container {
+    padding: 0 2rem;
+    width: 100%;
+    background-color: rgb(204, 47, 47);
+  }
+}

@@ -1,0 +1,74 @@
+.promotion {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+
+    width: 100%;
+    height: 40rem;
+
+    &__container {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+
+      background-image: linear-gradient(to bottom, $primaryColor, $blackColor);
+      border-radius: 1rem;
+      padding: 2rem 2.5rem;
+      &--title {
+        & h2 {
+          font-size: 2.1rem;
+          font-weight: $bold;
+          color: $whiteColor;
+          max-width: 15rem;
+          line-height: 1.1;
+          text-transform: uppercase;
+        }
+      }
+      &--line {
+        width: 5rem;
+        border-bottom: 0.2rem solid $whiteColor;
+        margin: 1rem 0;
+      }
+
+      &--desc {
+        & p {
+          font-size: 1.5rem;
+          font-weight: $regular;
+          width: 100%;
+          color: $whiteColor;
+          line-height: 1.1;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-word;
+        }
+      }
+      &--button {
+        //   position: absolute;
+        //   left: 50%;
+        //   bottom: 3rem;
+        //   transform: translateX(-50%);
+        margin-top: 18rem;
+        // width: 100%;
+        & button {
+          background-color: transparent;
+          text-transform: uppercase;
+          border: 0.2rem solid $whiteColor;
+          padding: 1.7rem 7rem;
+          color: $whiteColor;
+          font-size: 1.2rem;
+          width: 100%;
+          font-weight: $bold;
+          &:hover {
+            border: 0.2rem solid $primaryColor;
+            background-color: $primaryColor;
+            transition: $smooth;
+          }
+        }
+      }
+    }
+  }
+}
