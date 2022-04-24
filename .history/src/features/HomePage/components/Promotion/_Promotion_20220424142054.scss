@@ -1,0 +1,15 @@
+.promotion {
+  background-color: #ecd823;
+  height: 75rem;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 2rem;
+  &__title {
+    font-size: 2.5rem;
+    word-wrap: normal;
+    font-weight: $bold;
+    max-width: 21.5rem;
+    color: $primaryColor;
+    line-height: 1;
+  }
+}

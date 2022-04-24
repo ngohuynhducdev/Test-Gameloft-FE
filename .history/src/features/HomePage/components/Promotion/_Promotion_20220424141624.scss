@@ -1,0 +1,10 @@
+.promotion {
+  background-color: #22c92a;
+  height: 75rem;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 2rem;
+  &__title {
+    font-size: 10rem;
+  }
+}
