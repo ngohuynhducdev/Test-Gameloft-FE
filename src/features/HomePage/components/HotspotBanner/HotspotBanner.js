@@ -3,6 +3,7 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import microsoftIcon from "./../../../../assets/images/microsoft.png";
 import nitendoIcon from "./../../../../assets/images/nitendo.png";
 import steamIcon from "./../../../../assets/images/steam.png";
+
 export default function HotspotBanner() {
   return (
     <>

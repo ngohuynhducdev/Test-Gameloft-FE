@@ -2,6 +2,10 @@ import React from "react";
 import iconShare from "../../../../assets/images/share.svg";
 import iconMail from "../../../../assets/images/mail.svg";
 import iconSupport from "../../../../assets/images/support.svg";
+
+import { BiSupport } from "react-icons/bi";
+import { BsFillShareFill } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
 export default function StickyMenu() {
   return (
     <>
@@ -69,22 +73,18 @@ export default function StickyMenu() {
         <nav>
           <div className="sticky__social--lists">
             <div className="sticky__social--item">
-              <a href="#">
-                <img src={iconShare} alt="" className="sticky__social--icon" />
+              <a href="#" className="sticky__social--icon">
+                <BsFillShareFill />
               </a>
             </div>
             <div className="sticky__social--item">
-              <a href="#">
-                <img src={iconMail} alt="" className="sticky__social--icon" />
+              <a href="#" className="sticky__social--icon">
+                <FiMail />
               </a>
             </div>
             <div className="sticky__social--item">
-              <a href="#">
-                <img
-                  src={iconSupport}
-                  alt=""
-                  className="sticky__social--icon"
-                />
+              <a href="#" className="sticky__social--icon">
+                <BiSupport />
               </a>
             </div>
           </div>

@@ -24,7 +24,7 @@ export default function Promotion() {
             </p>
           </div>
         </div>
-        <div style={{ height: "60vh", width: "100%" }}>
+        <div>
           <CardSlider data={data} />
         </div>
       </section>

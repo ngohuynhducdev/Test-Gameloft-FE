@@ -2,20 +2,74 @@
   &__card {
     display: flex;
     flex-direction: column;
-    padding: 0 2rem;
     width: 100%;
     height: 60vh;
+    // padding: 2rem;
 
     @media screen and (min-width: 1920px) {
-      width: 25%;
+      width: 40rem;
+      height: 53rem;
+      padding: 2rem;
     }
     &__container {
-      width: 100%;
+      width: 80%;
       height: 100%;
-
-      background-image: linear-gradient(to bottom, $primaryColor, $blackColor);
+      margin: 0 auto;
+      background-image: linear-gradient(to bottom, $primaryColor, #020a11);
       border-radius: 1rem;
       padding: 2rem 2.5rem;
+      @media screen and (min-width: 1920px) {
+        width: 100%;
+        padding: 4rem;
+        position: relative;
+        &:hover {
+          transform: scale(1.1);
+          border-radius: 2rem;
+          transition: $smooth;
+          &.promotion__card__container::after {
+            content: "";
+            display: none;
+          }
+          & .promotion__card__container {
+            &--title h2 {
+              font-size: 2.1rem;
+              max-width: 15rem;
+              padding-top: initial;
+            }
+
+            &--line {
+              display: block;
+            }
+            &--desc p {
+              display: block;
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              word-break: break-word;
+            }
+            &--button button {
+              display: block;
+              margin-top: 22rem;
+            }
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 15%;
+          left: 50%;
+          transform: translateX(-25%);
+          background-image: url("../../../../../assets/images/thumbnail-img.png");
+          background-repeat: no-repeat;
+          margin-left: auto;
+        }
+      }
+
       &--title {
         & h2 {
           font-size: 2.1rem;
@@ -24,12 +78,20 @@
           max-width: 15rem;
           line-height: 1.1;
           text-transform: uppercase;
+          @media screen and (min-width: 1920px) {
+            font-size: 3.5rem;
+            max-width: 25rem;
+            padding-top: 33rem;
+          }
         }
       }
       &--line {
         width: 5rem;
         border-bottom: 0.2rem solid $whiteColor;
         margin: 1rem 0;
+        @media screen and (min-width: 1920px) {
+          display: none;
+        }
       }
 
       &--desc {
@@ -45,6 +107,9 @@
           overflow: hidden;
           text-overflow: ellipsis;
           word-break: break-word;
+          @media screen and (min-width: 1920px) {
+            display: none;
+          }
         }
       }
       &--button {
@@ -58,6 +123,9 @@
           font-size: 1.2rem;
           width: 100%;
           font-weight: $bold;
+          @media screen and (min-width: 1920px) {
+            display: none;
+          }
           &:hover {
             border: 0.2rem solid $primaryColor;
             background-color: $primaryColor;
@@ -67,4 +135,58 @@
       }
     }
   }
+}
+
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .swiper-slide {
+//   text-align: center;
+//   font-size: 18px;
+//   background: #fff;
+
+//   /* Center slide text vertically */
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: -webkit-flex;
+//   display: flex;
+//   -webkit-box-pack: center;
+//   -ms-flex-pack: center;
+//   -webkit-justify-content: center;
+//   justify-content: center;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   -webkit-align-items: center;
+//   align-items: center;
+// }
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+.swiper-pagination-bullet {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 2rem;
+  color: $primaryColor;
+  opacity: 10;
+  border: 0.2rem solid $primaryColor;
+  background-color: transparent;
+  // @media screen and (min-width: 375px) {
+  //   display: none;
+  // }
+}
+
+.swiper-pagination-bullet-active {
+  color: rgb(0, 0, 0);
+  font-weight: $bold;
+  font-size: 2rem;
+  background: $primaryColor;
 }

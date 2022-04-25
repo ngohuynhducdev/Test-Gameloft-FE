@@ -47,8 +47,8 @@ export default function Footer() {
             <img src={logoWhite} alt="" />
           </div>
           <div className="footer__wrapper__follow--language">
-            <select name="" id="" placeholder="Hello" style={{ width: "100%" }}>
-              <option value="1">1</option>
+            <select name="" id="" style={{ width: "100%" }}>
+              <option value="English">English</option>
             </select>
           </div>
         </div>
@@ -82,6 +82,13 @@ export default function Footer() {
             other trademarks are the property of their respective owners.
           </p>
         </div>
+      </div>
+      <div className="footer__wrapper--copyrightdesktop">
+        <p>
+          ©2020 Gameloft. All rights reserved. Gameloft and the Gameloft logo
+          are trademarks of Gameloft in the U.S. and/or other countries. All
+          other trademarks are the property of their respective owners.
+        </p>
       </div>
     </section>
   );
