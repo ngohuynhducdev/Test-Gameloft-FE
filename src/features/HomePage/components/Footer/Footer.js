@@ -1,70 +1,11 @@
 import React from "react";
-import facebook from "./../../../../assets/images/facebook.png";
-import linkedin from "./../../../../assets/images/linkedin.png";
-import twitter from "./../../../../assets/images/twitter.png";
-import youtube from "./../../../../assets/images/youtube.png";
+// import facebook from "./../../../../assets/images/facebook.png";
+// import linkedin from "./../../../../assets/images/linkedin.png";
+// import twitter from "./../../../../assets/images/twitter.png";
+// import youtube from "./../../../../assets/images/youtube.png";
 import logoWhite from "./../../../../assets/images/Gameloft_Logo_Flat_White_Line.png";
 
-// import { Dropdown } from "semantic-ui-react";
-
 import { GrFacebook, GrLinkedin, GrYoutube, GrTwitter } from "react-icons/gr";
-
-// const friendOptions = [
-//   {
-//     key: "Jenny Hess",
-//     text: "Jenny Hess",
-//     value: "Jenny Hess",
-//     image: {
-//       avatar: true,
-//       src: "https://react.semantic-ui.com/images/avatar/small/jenny.jpg",
-//     },
-//   },
-//   {
-//     key: "Elliot Fu",
-//     text: "Elliot Fu",
-//     value: "Elliot Fu",
-//     image: {
-//       avatar: true,
-//       src: "https://react.semantic-ui.com/images/avatar/small/elliot.jpg",
-//     },
-//   },
-//   {
-//     key: "Stevie Feliciano",
-//     text: "Stevie Feliciano",
-//     value: "Stevie Feliciano",
-//     image: {
-//       avatar: true,
-//       src: "https://react.semantic-ui.com/images/avatar/small/stevie.jpg",
-//     },
-//   },
-//   {
-//     key: "Christian",
-//     text: "Christian",
-//     value: "Christian",
-//     image: {
-//       avatar: true,
-//       src: "https://react.semantic-ui.com/images/avatar/small/christian.jpg",
-//     },
-//   },
-//   {
-//     key: "Matt",
-//     text: "Matt",
-//     value: "Matt",
-//     image: {
-//       avatar: true,
-//       src: "https://react.semantic-ui.com/images/avatar/small/matt.jpg",
-//     },
-//   },
-//   {
-//     key: "Justen Kitsune",
-//     text: "Justen Kitsune",
-//     value: "Justen Kitsune",
-//     image: {
-//       avatar: true,
-//       src: "https://react.semantic-ui.com/images/avatar/small/justen.jpg",
-//     },
-//   },
-// ];
 
 export default function Footer() {
   return (
@@ -106,23 +47,9 @@ export default function Footer() {
             <img src={logoWhite} alt="" />
           </div>
           <div className="footer__wrapper__follow--language">
-            {/* <select name="" id="" placeholder="Hello" style={{ width: "100%" }}>
+            <select name="" id="" placeholder="Hello" style={{ width: "100%" }}>
               <option value="1">1</option>
-            </select> */}
-            {/* <select name="" id="">
-              <option value="" disabled selected hidden>
-                <GrTwitter /> English
-              </option>
-              <option value="">
-                <GrTwitter /> English
-              </option>
-            </select> */}
-            {/* <Dropdown
-              placeholder="Select Friend"
-              fluid
-              selection
-              options={friendOptions}
-            /> */}
+            </select>
           </div>
         </div>
         <div className="footer__wrapper__links">
@@ -148,13 +75,13 @@ export default function Footer() {
             <a href="#">Business Contacts</a>
           </div>
         </div>
-        {/* <div className="footer__wrapper--copyright">
+        <div className="footer__wrapper--copyright">
           <p>
             ©2020 Gameloft. All rights reserved. Gameloft and the Gameloft logo
             are trademarks of Gameloft in the U.S. and/or other countries. All
             other trademarks are the property of their respective owners.
           </p>
-        </div> */}
+        </div>
       </div>
     </section>
   );
