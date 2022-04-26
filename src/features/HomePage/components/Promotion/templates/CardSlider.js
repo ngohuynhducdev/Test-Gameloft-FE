@@ -21,6 +21,7 @@ export default function CardSlider() {
         pagination={pagination}
         modules={[Pagination, Autoplay]}
         centeredSlides={true}
+        grabCursor={true}
         loop={true}
         autoplay={{
           delay: 3000,

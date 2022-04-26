@@ -22,6 +22,7 @@ export default function GameCardSlider() {
         pagination={{
           type: "fraction",
         }}
+        grabCursor={true}
         loop={true}
         autoplay={{
           delay: 3000,

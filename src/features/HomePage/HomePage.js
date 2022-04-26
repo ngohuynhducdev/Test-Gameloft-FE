@@ -1,5 +1,4 @@
 import React from "react";
-import Community from "./components/Community/Community.js";
 import ContactForm from "./components/ContactForm/ContactForm.js";
 import ExclusiveContent from "./components/ExclusiveContent/ExclusiveContent.js";
 import Footer from "./components/Footer/Footer.js";
@@ -13,7 +12,6 @@ export default function HomePage() {
       <StickyMenu />
       <HotspotBanner />
       <ContactForm />
-      {/* <Community /> */}
       <Promotion />
       <ExclusiveContent />
       <Footer />
