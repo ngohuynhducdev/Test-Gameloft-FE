@@ -1,7 +1,7 @@
 import React from "react";
-import iconShare from "../../../../assets/images/share.svg";
-import iconMail from "../../../../assets/images/mail.svg";
-import iconSupport from "../../../../assets/images/support.svg";
+// import iconShare from "../../../../assets/images/share.svg";
+// import iconMail from "../../../../assets/images/mail.svg";
+// import iconSupport from "../../../../assets/images/support.svg";
 
 import { BiSupport } from "react-icons/bi";
 import { BsFillShareFill } from "react-icons/bs";

@@ -12,13 +12,13 @@
 // Layout
 @import "./../features/HomePage/components/StickyMenu/StickyMenu";
 @import "./../features/HomePage/components/HotspotBanner/HotspotBanner";
+@import "./../features/HomePage/components/ExclusiveContent/ExclusiveContent";
 @import "./../features/HomePage/components/ContactForm/ContactForm";
 @import "./../features/HomePage/components/Promotion/Promotion";
 @import "./../features/HomePage/components/Footer/Footer";
 
+// Components
 @import "./../features/HomePage/components/Promotion/templates/CardStyle";
-// TODO: -- Slick Carousel --
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-
+@import "./../features/HomePage/components/ExclusiveContent/templates/GameCardStyle";
+// TODO: -- Swiper Carousel -
 @import "swiper/css";

@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Slider from "react-slick";
-import CircleProgress from "./CircleProgress";
+
 import CardItem from "./CardItem";
 
 // TODO: Swiper
@@ -26,7 +25,7 @@ export default function CardSlider() {
   return (
     <>
       <Swiper
-        pagination={pagination}
+        // pagination={pagination}
         modules={[Pagination, Autoplay]}
         centeredSlides={true}
         loop={true}

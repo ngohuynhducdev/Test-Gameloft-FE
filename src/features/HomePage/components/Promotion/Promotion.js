@@ -2,12 +2,6 @@ import React from "react";
 import CardSlider from "./templates/CardSlider";
 import Fade from "react-reveal/Fade";
 export default function Promotion() {
-  const data = [];
-  let i = 0;
-  while (i < 10) {
-    data.push({});
-    i++;
-  }
   return (
     <>
       <section className="promotion">
@@ -26,7 +20,7 @@ export default function Promotion() {
             </div>
           </div>
           <div>
-            <CardSlider data={data} />
+            <CardSlider />
           </div>
         </Fade>
       </section>
