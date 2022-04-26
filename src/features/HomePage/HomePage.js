@@ -10,13 +10,6 @@ import { FullPage, Slide } from "react-full-page";
 export default function HomePage() {
   return (
     <>
-      {/* <StickyMenu />
-      <HotspotBanner />
-      <ContactForm />
-      <Promotion />
-      <ExclusiveContent />
-      <Footer /> */}
-
       <FullPage controls="true">
         <StickyMenu />
         <Slide>
