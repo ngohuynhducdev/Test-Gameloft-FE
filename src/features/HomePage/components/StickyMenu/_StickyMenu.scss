@@ -159,6 +159,7 @@ header {
       bottom: 5rem;
       right: 3rem;
       z-index: 10;
+
       @media screen and (min-width: 1920px) {
         right: 8rem;
         bottom: 12rem;
@@ -173,8 +174,9 @@ header {
       margin-bottom: 1rem;
       transition: $smooth;
       @media screen and (min-width: 1920px) {
-        width: 3.3rem;
-        height: 3.3rem;
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 2rem;
       }
 
       &:hover::after {
@@ -184,6 +186,7 @@ header {
         height: 3.7rem;
         border-radius: 100%;
 
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -192,8 +195,8 @@ header {
         opacity: 0.5;
         z-index: -1;
         @media screen and (min-width: 1920px) {
-          width: 4rem;
-          height: 4rem;
+          width: 6rem;
+          height: 6rem;
         }
       }
       &:hover .sticky__social--icon {
@@ -201,27 +204,41 @@ header {
         transition: $smooth;
       }
 
-      // & img {
-      //   width: 1.3rem;
+      // & a {
+      //   font-size: 1.5rem;
       //   position: absolute;
       //   top: 50%;
       //   left: 50%;
       //   transform: translate(-50%, -50%);
+      //   color: $blackColor;
       //   @media screen and (min-width: 1920px) {
-      //     width: 1.7rem;
+      //     width: 5rem;
+      //     height: 5rem;
+      //     font-size: 3rem;
       //   }
       // }
     }
     &--icon {
-      width: 1.3rem;
+      font-size: 1.5rem;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: $blackColor;
       @media screen and (min-width: 1920px) {
-        width: 1.7rem;
+        font-size: 2.5rem;
       }
     }
+    // &--icon {
+    //   width: 1.3rem;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   color: $blackColor;
+    //   @media screen and (min-width: 1920px) {
+    //     width: 1.7rem;
+    //   }
+    // }
   }
 }
