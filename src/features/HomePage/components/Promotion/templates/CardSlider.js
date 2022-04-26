@@ -26,7 +26,7 @@ export default function CardSlider() {
   return (
     <>
       <Swiper
-        // pagination={pagination}
+        pagination={pagination}
         modules={[Pagination, Autoplay]}
         centeredSlides={true}
         loop={true}
