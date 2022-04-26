@@ -82,11 +82,6 @@
       margin-top: 1rem;
       cursor: pointer;
 
-      // FIXME: align center?
-      // display: inline-block;
-      // position: relative;
-      // left: 50%;
-      // transform: translateX(-50%);
       display: block;
       margin: 0 auto;
       @media screen and (min-width: 1920px) {
@@ -113,7 +108,6 @@
       flex-direction: row;
       width: 100%;
 
-      // FIXME: height?
       height: 4rem;
 
       & input {

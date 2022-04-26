@@ -1,11 +1,9 @@
 import React from "react";
-// import iconShare from "../../../../assets/images/share.svg";
-// import iconMail from "../../../../assets/images/mail.svg";
-// import iconSupport from "../../../../assets/images/support.svg";
 
 import { BiSupport } from "react-icons/bi";
 import { BsFillShareFill } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+
 export default function StickyMenu() {
   return (
     <>
@@ -53,14 +51,6 @@ export default function StickyMenu() {
               <li className="sticky__link">
                 <a href="#">Careers</a>
               </li>
-              {/* <div className="sticky__find">
-                <p>Find us on</p>
-                <ul>
-                  <li>
-                    <a href="">1</a>
-                  </li>
-                </ul>
-              </div> */}
             </ul>
           </div>
           {/* TODO: -- menu button -- */}

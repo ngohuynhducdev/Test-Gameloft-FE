@@ -1,17 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 
 import CardItem from "./CardItem";
 
-// TODO: Swiper
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-// import "swiper/css/bundle";
-
-// import required modules
 import { Pagination, Autoplay } from "swiper";
 
 export default function CardSlider() {
@@ -33,15 +26,11 @@ export default function CardSlider() {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
         breakpoints={{
           375: {
             slidesPerView: 1,
             spaceBetween: 15,
           },
-
           1920: {
             slidesPerView: 4,
             spaceBetween: 60,
@@ -49,24 +38,11 @@ export default function CardSlider() {
         }}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <CardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardItem />
-        </SwiperSlide>
+        {[...Array(6)].map((item, index) => (
+          <SwiperSlide key={`swiper-slide-promotion-${index}`}>
+            <CardItem />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

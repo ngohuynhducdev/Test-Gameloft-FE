@@ -1,24 +1,22 @@
-// Library CSS (Bootstrap,...)
-
-// Base
+// TODO: -- base --
 @import "./base/reset";
 
-// Helper
+// TODO: -- helper --
 @import "./helper/variables";
 
-// Components
-@import "./components/button";
-
-// Layout
+// TODO: -- layout --
 @import "./../features/HomePage/components/StickyMenu/StickyMenu";
 @import "./../features/HomePage/components/HotspotBanner/HotspotBanner";
-@import "./../features/HomePage/components/ExclusiveContent/ExclusiveContent";
 @import "./../features/HomePage/components/ContactForm/ContactForm";
+@import "./../features/HomePage/components/Community/Community";
 @import "./../features/HomePage/components/Promotion/Promotion";
+@import "./../features/HomePage/components/ExclusiveContent/ExclusiveContent";
 @import "./../features/HomePage/components/Footer/Footer";
 
-// Components
+// TODO: -- components --
 @import "./../features/HomePage/components/Promotion/templates/CardStyle";
 @import "./../features/HomePage/components/ExclusiveContent/templates/GameCardStyle";
-// TODO: -- Swiper Carousel -
+@import "./../features/HomePage/components/Community/templates/CardCommunity.scss";
+
+// TODO: -- swiper carousel -
 @import "swiper/css";

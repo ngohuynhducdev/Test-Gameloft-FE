@@ -1,8 +1,4 @@
 import React from "react";
-// import facebook from "./../../../../assets/images/facebook.png";
-// import linkedin from "./../../../../assets/images/linkedin.png";
-// import twitter from "./../../../../assets/images/twitter.png";
-// import youtube from "./../../../../assets/images/youtube.png";
 import logoWhite from "./../../../../assets/images/Gameloft_Logo_Flat_White_Line.png";
 import Fade from "react-reveal/Fade";
 
@@ -19,27 +15,21 @@ export default function Footer() {
               <ul>
                 <li>
                   <a href="#">
-                    {/* <img src={facebook} alt="" /> */}
                     <GrFacebook />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    {/* <img src={linkedin} alt="" /> */}
                     <GrLinkedin />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    {" "}
-                    {/* <img src={twitter} alt="" /> */}
                     <GrTwitter />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    {" "}
-                    {/* <img src={youtube} alt="" /> */}
                     <GrYoutube />
                   </a>
                 </li>
@@ -51,6 +41,7 @@ export default function Footer() {
             <div className="footer__wrapper__follow--language">
               <select name="" id="" style={{ width: "100%" }}>
                 <option value="English">English</option>
+                <option value="English">French</option>
               </select>
             </div>
           </div>

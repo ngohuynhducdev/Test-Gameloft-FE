@@ -16,7 +16,7 @@ export default function ContactForm() {
                 Don't get left behind! <br /> Subscribe to our newsletters
                 today!
               </p>
-              {/* TODO: -- input -- */}
+
               <input type="text" name="" placeholder="Name" id="" />
               <input type="text" name="" id="" placeholder="Email" />
               <select name="" id="">
@@ -37,9 +37,8 @@ export default function ContactForm() {
               </select>
               <div className="form__policy">
                 <div className="form__policy--item">
-                  {/* TODO: Box Check */}
                   <input type="checkbox" name="" id="" />
-                  {/* TODO: Text */}
+
                   <p>
                     By signing up, I confirm that I am 13 years old or older. I
                     agree to the Gameloft Terms and Conditions and I have read
@@ -47,9 +46,8 @@ export default function ContactForm() {
                   </p>
                 </div>
                 <div className="form__policy--item">
-                  {/* TODO: Box Check */}
                   <input type="checkbox" name="" id="" />
-                  {/* TODO: Text */}
+
                   <p>
                     I agree to receive promotional offers relating to all
                     Gameloft games and services.

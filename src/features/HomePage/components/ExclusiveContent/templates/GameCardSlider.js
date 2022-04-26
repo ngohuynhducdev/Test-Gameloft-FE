@@ -1,27 +1,27 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React, { useRef } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/bundle";
-
-// import "./_GameCardStyle.scss";
-
-// import required modules
 import { Pagination, Navigation, Autoplay } from "swiper";
+
 import GameCardItem from "./GameCardItem";
 
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+
 export default function GameCardSlider() {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
   return (
     <>
       <Swiper
         pagination={{
           type: "fraction",
         }}
-        // centeredSlides={true}
         loop={true}
         autoplay={{
           delay: 3000,
@@ -37,42 +37,33 @@ export default function GameCardSlider() {
             spaceBetween: 60,
           },
         }}
-        navigation={true}
+        onInit={(swiper) => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
         modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper1"
       >
-        <SwiperSlide>
-          <GameCardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <GameCardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <GameCardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <GameCardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <GameCardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <GameCardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <GameCardItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <GameCardItem />
-        </SwiperSlide>
+        {[...Array(10)].map((item, index) => (
+          <SwiperSlide key={`swiper-slide-${index}`}>
+            <GameCardItem />
+          </SwiperSlide>
+        ))}
 
-        <SwiperSlide>
-          <GameCardItem />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <GameCardItem />
-        </SwiperSlide>
+        <div className="button__nav">
+          <div ref={prevRef} className="button__nav--left">
+            <a href="#">
+              <BsArrowLeft />
+            </a>
+          </div>
+          <div ref={nextRef} className="button__nav--right">
+            <a href="#">
+              <BsArrowRight />
+            </a>
+          </div>
+        </div>
       </Swiper>
     </>
   );
