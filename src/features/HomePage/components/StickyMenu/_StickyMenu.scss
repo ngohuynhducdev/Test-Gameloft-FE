@@ -131,13 +131,13 @@ header {
   &__social {
     &--lists {
       position: fixed;
-      bottom: 5rem;
+      bottom: 24%;
       right: 3rem;
       z-index: 10;
 
       @media screen and (min-width: 1920px) {
         right: 8rem;
-        bottom: 12rem;
+        bottom: 24%;
       }
     }
     &--item {

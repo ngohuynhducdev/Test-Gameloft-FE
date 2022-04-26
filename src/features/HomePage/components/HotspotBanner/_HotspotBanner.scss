@@ -1,6 +1,6 @@
 .banner {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
 
   &__img {
     position: absolute;
@@ -19,12 +19,12 @@
   &__desc {
     position: absolute;
     padding: 0 3.7rem;
-    bottom: 3.9rem;
+    bottom: 25%;
     color: $whiteColor;
 
     @media screen and (min-width: 1920px) {
       padding: 0 44.6rem;
-      bottom: 10rem;
+      bottom: 27%;
     }
 
     & h2 {
@@ -83,7 +83,7 @@
   &__button {
     background-color: #d8edff;
     width: 100%;
-    height: fit-content;
+    min-height: 20vh;
 
     @media screen and (min-width: 1920px) {
       display: flex;
