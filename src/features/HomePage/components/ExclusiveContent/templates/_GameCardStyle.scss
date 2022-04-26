@@ -1,12 +1,17 @@
 .gcard {
   position: relative;
-  width: 90%;
-  min-height: 35vh;
+  width: 320px;
+  height: 180px;
   background-color: #d5ecff;
   border-radius: 0.2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1920px) {
+    width: 630px;
+    height: 380px;
+    margin-top: 13rem;
+  }
   &__thumnail {
     height: 100%;
     width: 100%;

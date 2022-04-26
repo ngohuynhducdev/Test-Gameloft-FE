@@ -6,15 +6,35 @@ import HotspotBanner from "./components/HotspotBanner/HotspotBanner.js";
 import Promotion from "./components/Promotion/Promotion.js";
 import StickyMenu from "./components/StickyMenu/StickyMenu.js";
 
+import { FullPage, Slide } from "react-full-page";
 export default function HomePage() {
   return (
     <>
-      <StickyMenu />
+      {/* <StickyMenu />
       <HotspotBanner />
       <ContactForm />
       <Promotion />
       <ExclusiveContent />
-      <Footer />
+      <Footer /> */}
+
+      <FullPage controls="true">
+        <StickyMenu />
+        <Slide>
+          <HotspotBanner />
+        </Slide>
+        <Slide>
+          <ContactForm />
+        </Slide>
+        <Slide>
+          <Promotion />
+        </Slide>
+        <Slide>
+          <ExclusiveContent />
+        </Slide>
+        <Slide>
+          <Footer />
+        </Slide>
+      </FullPage>
     </>
   );
 }
