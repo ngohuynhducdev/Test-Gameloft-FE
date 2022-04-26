@@ -25,7 +25,7 @@ export default function CardSlider() {
   return (
     <>
       <Swiper
-        // pagination={pagination}
+        pagination={pagination}
         modules={[Pagination, Autoplay]}
         centeredSlides={true}
         loop={true}
@@ -41,10 +41,7 @@ export default function CardSlider() {
             slidesPerView: 1,
             spaceBetween: 15,
           },
-          // 768: {
-          //   slidesPerView: 4,
-          //   spaceBetween: 40,
-          // },
+
           1920: {
             slidesPerView: 4,
             spaceBetween: 60,
