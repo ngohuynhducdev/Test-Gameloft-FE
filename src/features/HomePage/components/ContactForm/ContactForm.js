@@ -1,6 +1,8 @@
 import React from "react";
+
 import { Fade } from "react-reveal";
 import Minion from "../../../../assets/images/Minion.png";
+
 export default function ContactForm() {
   return (
     <>
@@ -16,7 +18,6 @@ export default function ContactForm() {
                 Don't get left behind! <br /> Subscribe to our newsletters
                 today!
               </p>
-
               <input type="text" name="" placeholder="Name" id="" />
               <input type="text" name="" id="" placeholder="Email" />
               <select name="" id="">
@@ -38,7 +39,6 @@ export default function ContactForm() {
               <div className="form__policy">
                 <div className="form__policy--item">
                   <input type="checkbox" name="" id="" />
-
                   <p>
                     By signing up, I confirm that I am 13 years old or older. I
                     agree to the Gameloft Terms and Conditions and I have read
@@ -47,7 +47,6 @@ export default function ContactForm() {
                 </div>
                 <div className="form__policy--item">
                   <input type="checkbox" name="" id="" />
-
                   <p>
                     I agree to receive promotional offers relating to all
                     Gameloft games and services.

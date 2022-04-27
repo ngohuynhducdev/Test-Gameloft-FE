@@ -32,7 +32,6 @@ export default function StickyMenu() {
           <div className="sticky__menu">
             <ul className="sticky__links">
               <input type="text" />
-
               <li className="sticky__link">
                 <a href="#">Home</a>
               </li>
@@ -58,7 +57,6 @@ export default function StickyMenu() {
             <div className="sticky__icon"></div>
           </div>
         </nav>
-
         {/* TODO: -- sticky social -- */}
         <nav>
           <div className="sticky__social--lists">

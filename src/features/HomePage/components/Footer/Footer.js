@@ -1,7 +1,7 @@
 import React from "react";
+
 import logoWhite from "./../../../../assets/images/Gameloft_Logo_Flat_White_Line.png";
 import Fade from "react-reveal/Fade";
-
 import { GrFacebook, GrLinkedin, GrYoutube, GrTwitter } from "react-icons/gr";
 
 export default function Footer() {
@@ -14,22 +14,22 @@ export default function Footer() {
               <h3>Follow Us</h3>
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="Facebook">
                     <GrFacebook />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="Linkedin">
                     <GrLinkedin />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="Twitter">
                     <GrTwitter />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="Youtube ">
                     <GrYoutube />
                   </a>
                 </li>
@@ -48,24 +48,24 @@ export default function Footer() {
           <div className="footer__wrapper__links">
             <div className="footer__wrapper__links--visit">
               <h4>Visit</h4>
-              <a href="#">Gameloft Games</a>
-              <a href="#">Gameloft Careers</a>
-              <a href="#">Gameloft News</a>
-              <a href="#">Gameloft Forum</a>
-              <a href="#">Gameloft Corporate</a>
-              <a href="#">Gameloft Advertising</a>
-              <a href="#">Gameloft Support</a>
+              <a href="Games">Gameloft Games</a>
+              <a href="Careers">Gameloft Careers</a>
+              <a href="News">Gameloft News</a>
+              <a href="Forum">Gameloft Forum</a>
+              <a href="Corporate">Gameloft Corporate</a>
+              <a href="Advertising">Gameloft Advertising</a>
+              <a href="Support">Gameloft Support</a>
             </div>
             <div className="footer__wrapper__links--legal">
               <h4>Legal</h4>
-              <a href="#">Terms of Use</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Cookies Policy</a>
-              <a href="#">EULA</a>
-              <a href="#">Legal Notices</a>
-              <a href="#">Event Rules</a>
-              <a href="#">Contest Rules</a>
-              <a href="#">Business Contacts</a>
+              <a href="Terms">Terms of Use</a>
+              <a href="Privacy">Privacy Policy</a>
+              <a href="Cookies">Cookies Policy</a>
+              <a href="EULA">EULA</a>
+              <a href="Legal">Legal Notices</a>
+              <a href="Event">Event Rules</a>
+              <a href="Contest">Contest Rules</a>
+              <a href="Business">Business Contacts</a>
             </div>
           </div>
           <div className="footer__wrapper--copyright">

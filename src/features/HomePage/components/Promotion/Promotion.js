@@ -1,6 +1,7 @@
 import React from "react";
 import CardSlider from "./templates/CardSlider";
 import Fade from "react-reveal/Fade";
+
 export default function Promotion() {
   return (
     <>

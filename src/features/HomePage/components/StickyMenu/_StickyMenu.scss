@@ -37,9 +37,11 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    svg {
+
+    & svg {
       height: 2.5rem;
       width: 12rem;
+
       @media screen and (min-width: 1920px) {
         height: 4rem;
         width: 19rem;
@@ -56,7 +58,6 @@ header {
     background-color: $blackColor;
     transition: $smooth;
     z-index: 1;
-
     transform: translateX(100%);
     opacity: 1;
   }
@@ -64,7 +65,8 @@ header {
   &__link {
     list-style: none;
     margin: 1rem;
-    a {
+
+    & a {
       text-decoration: none;
       color: $whiteColor;
       font-weight: $regular;
@@ -95,10 +97,12 @@ header {
     border-radius: 0.5rem;
     transition: $smooth;
     position: relative;
+
     @media screen and (min-width: 1920px) {
       width: 3rem;
       height: 0.4rem;
     }
+
     &::before,
     &::after {
       content: "";
@@ -108,18 +112,22 @@ header {
       background-color: $blackColor;
       border-radius: 0.5rem;
       transition: $smooth;
+
       @media screen and (min-width: 1920px) {
         width: 4rem;
         height: 0.4rem;
       }
     }
+
     &::before {
       transform: translateY(-1.1rem);
+
       @media screen and (min-width: 1920px) {
         width: 4rem;
         height: 0.4rem;
       }
     }
+
     &::after {
       transform: translateY(0.9rem);
       @media screen and (min-width: 1920px) {
@@ -140,6 +148,7 @@ header {
         bottom: 24%;
       }
     }
+
     &--item {
       position: relative;
       background-color: $whiteColor;
@@ -148,6 +157,7 @@ header {
       border-radius: 100%;
       margin-bottom: 1rem;
       transition: $smooth;
+
       @media screen and (min-width: 1920px) {
         width: 5rem;
         height: 5rem;
@@ -160,7 +170,6 @@ header {
         width: 3.7rem;
         height: 3.7rem;
         border-radius: 100%;
-
         position: absolute;
         top: 50%;
         left: 50%;
@@ -169,16 +178,19 @@ header {
         background-color: $whiteColor;
         opacity: 0.5;
         z-index: -1;
+
         @media screen and (min-width: 1920px) {
           width: 6rem;
           height: 6rem;
         }
       }
+
       &:hover .sticky__social--icon {
         color: $primaryColor;
         transition: $smooth;
       }
     }
+
     &--icon {
       font-size: 1.5rem;
       position: absolute;
@@ -186,6 +198,7 @@ header {
       left: 50%;
       transform: translate(-50%, -50%);
       color: $blackColor;
+
       @media screen and (min-width: 1920px) {
         font-size: 2.5rem;
       }

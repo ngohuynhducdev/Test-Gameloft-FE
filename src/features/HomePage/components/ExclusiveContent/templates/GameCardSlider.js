@@ -1,15 +1,12 @@
 import React, { useRef } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Pagination, Navigation, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/bundle";
-import { Pagination, Navigation, Autoplay } from "swiper";
-
 import GameCardItem from "./GameCardItem";
-
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 export default function GameCardSlider() {
@@ -55,12 +52,12 @@ export default function GameCardSlider() {
 
         <div className="button__nav">
           <div ref={prevRef} className="button__nav--left">
-            <a href="#">
+            <a href="ArrowLeft">
               <BsArrowLeft />
             </a>
           </div>
           <div ref={nextRef} className="button__nav--right">
-            <a href="#">
+            <a href="ArrowRight">
               <BsArrowRight />
             </a>
           </div>

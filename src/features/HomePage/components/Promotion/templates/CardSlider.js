@@ -3,9 +3,9 @@ import React from "react";
 import CardItem from "./CardItem";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper";
 
 export default function CardSlider() {
   const pagination = {
