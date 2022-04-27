@@ -20,9 +20,9 @@ export default function CardSlider() {
       <Swiper
         pagination={pagination}
         modules={[Pagination, Autoplay]}
-        centeredSlides={true}
-        grabCursor={true}
-        loop={true}
+        centeredSlides
+        grabCursor
+        loop
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,

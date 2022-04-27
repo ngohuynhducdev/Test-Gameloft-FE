@@ -12,6 +12,7 @@
     }
 
     &__container {
+      position: relative;
       width: 80%;
       height: 100%;
       margin: 0 auto;
@@ -29,7 +30,11 @@
           border-radius: 2rem;
           transition: $smooth;
 
-          &.promotion__card__container::after {
+          & .promotion__card__container--image {
+            display: none;
+          }
+
+          & .promotion__card__container::after {
             content: "";
             display: none;
           }
@@ -61,18 +66,16 @@
             }
           }
         }
+      }
+      &--image {
+        display: none;
 
-        &::after {
-          content: "";
+        @media screen and (min-width: 1920px) {
+          display: block;
           position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 15%;
+          top: 30%;
           left: 50%;
-          transform: translateX(-25%);
-          background-image: url("../../../../../assets/images/thumbnail-img.png");
-          background-repeat: no-repeat;
-          margin-left: auto;
+          transform: translate(-50%, -50%);
         }
       }
 

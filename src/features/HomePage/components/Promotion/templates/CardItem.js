@@ -1,8 +1,13 @@
 import React from "react";
+
+import imageThumnail from "./../../../../../assets/images/thumbnail-icon.png";
 export default function CardItem() {
   return (
     <div className="promotion__card">
       <div className="promotion__card__container">
+        <div className="promotion__card__container--image">
+          <img src={imageThumnail} alt="imageThumnail" />
+        </div>
         <div className="promotion__card__container--title">
           <h2>short title here</h2>
         </div>
